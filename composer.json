@@ -1,0 +1,24 @@
+{
+    "name": "synnode/modular",
+    "description": "Modular pattern generator for Laravel 5",
+    "keywords": ["laravel", "modular", "modules", "module", "structure", "pattern"],
+    "homepage": "https://github.com/Synnode/Modular",
+    "license": "MIT",
+    "version": "1.0",
+    "authors": [
+        {
+            "name": "xSiNx",
+            "email": "None@interesting.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "laravel/framework": ">=5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Synnode\\Modular\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
