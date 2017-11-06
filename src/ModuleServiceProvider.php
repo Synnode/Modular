@@ -23,8 +23,8 @@ class ModuleServiceProvider extends ServiceProvider
                 if (!$this->app->routesAreCached()) {
                     $route_files = [
                         app_path() . '/Modules/' . $module . '/routes.php',
-                        app_path() . '/Modules/' . $module . '/routes/web.php',
-                        app_path() . '/Modules/' . $module . '/routes/api.php',
+                        app_path() . '/Modules/' . $module . '/Routes/web.php',
+                        app_path() . '/Modules/' . $module . '/Routes/api.php',
                     ];
                     foreach ($route_files as $route_file) {
                         if ($this->files->exists($route_file)) {
