@@ -134,12 +134,12 @@ class ModuleMakeCommand extends GeneratorCommand
 
             case 'web':
                 $filename = 'web';
-                $folder = 'routes\\';
+                $folder = 'Routes\\';
                 break;
 
             case 'api':
                 $filename = 'api';
-                $folder = 'routes\\';
+                $folder = 'Routes\\';
                 break;
                 
             case 'helper':
