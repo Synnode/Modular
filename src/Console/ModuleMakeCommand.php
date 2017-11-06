@@ -148,7 +148,7 @@ class ModuleMakeCommand extends GeneratorCommand
         }
 
         if (! isset($folder)) {
-            $folder = ($type != 'routes' && $type != 'helper') ? ucfirst($type).'s\\'. ($type === 'translation' ? 'en\\':'') : '';
+            $folder = ($type != 'Routes' && $type != 'helper') ? ucfirst($type).'s\\'. ($type === 'translation' ? 'en\\':'') : '';
         }
 
         $qualifyClass = method_exists($this, 'qualifyClass') ? 'qualifyClass' : 'parseName';
@@ -172,7 +172,7 @@ class ModuleMakeCommand extends GeneratorCommand
      */
     protected function getNamespace($name)
     {
-        $name = str_replace('\\routes\\', '\\', $name);
+        $name = str_replace('\\Routes\\', '\\', $name);
         return trim(implode('\\', array_map('ucfirst', array_slice(explode('\\', studly_case($name)), 0, -1))), '\\');
     }
 
