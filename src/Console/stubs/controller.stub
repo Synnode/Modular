@@ -15,7 +15,7 @@ class DummyClass extends Controller
      */
     public function index()
     {
-        return view("DummyUCtitle::index");
+        return view("DummyTitle::index");
     }
 
     /**
